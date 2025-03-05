@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar and Videos</title>
+    <title>Semantic Navbar and Videos</title>
+    <style>
+
+    </style>
 </head>
+
 <body>
 
     <!-- Semantic Navbar -->
     <nav>
         <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="aboutus">About Us</a></li>
-            <li><a href="contactus">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
         </ul>
     </nav>
 
-    <!-- Heading for the videos -->
-    <h2>3 Random Videos</h2>
+    <!-- Heading and Videos -->
+    <div class="videos-container">
+        <h1>3 Random Videos</h1>
 
-    <!-- Videos Section -->
-    <div>
-        <video controls>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video controls>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video controls>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div class="video">
+            <video width="600" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video">
+            <video width="600" controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video">
+            <video width="600" controls>
+                <source
+                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
+                    type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 
 </body>
+
 </html>
